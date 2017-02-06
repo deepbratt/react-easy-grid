@@ -6,7 +6,8 @@ class View extends Component {
         let props = {...this.props};
         let style = {...{
             display:'flex',
-            flex:1
+            flex:1,
+            flexDirection: 'column'
         },...props.style}
 
         //Remove flex if height or width exists
