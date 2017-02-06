@@ -1,6 +1,6 @@
 {
   "name": "react-easy-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy React Layout & Grid based on react-native-easy-grid",
   "main": "dist/index.js",
   "author": "Praveen Prasad",
