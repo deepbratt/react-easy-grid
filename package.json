@@ -2,7 +2,22 @@
   "name": "react-easy-grid",
   "version": "1.0.0",
   "description": "Easy React Layout & Grid based on react-native-easy-grid",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Praveen Prasad",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "rimraf": "^2.5.4"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel src -d dist --copy-files --ignore *.test.js",
+    "build:watch": "npm run build -- --watch",
+    "start:watch": "nodemon dist/index.js --ignore dist"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.22.0"
+  }
 }
